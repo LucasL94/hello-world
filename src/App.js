@@ -1,10 +1,11 @@
 import './App.css';
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Books from './Books'
+
+import { Route, Routes } from 'react-router-dom'
+
+import Books from './components/books/Books'
 import CardsPage from './CardsPage'
 import Header from './Header'
-import { Button } from 'antd';
+import React from 'react'
 
 function App() {
   return (
@@ -14,7 +15,6 @@ function App() {
         <Route path='/' element={<CardsPage />} />
         <Route path='/books' element={<Books />} />
       </Routes>
-      <Button type='primary'>Hola</Button>
     </div>
   );
 }
